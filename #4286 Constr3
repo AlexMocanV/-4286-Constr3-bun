@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+long long b,x[1001],y[1001],j,i,d,prim;
+bool ok=0;
+int main()
+{
+    cin>>b;
+    
+    for(i=1;i<=b;i++)
+    {
+        cin>>x[i];
+    }
+    for(i=b;i>=1;i--)
+    {
+        if(x[i]%2==1)
+        {
+            j++;
+            y[j]=x[i];
+        }
+    }
+     for(i=1;i<=j;i++)
+    {
+        cout<<y[i]<<" ";
+    }
+    return 0;
+}
